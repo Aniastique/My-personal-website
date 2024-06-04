@@ -40,10 +40,10 @@ contactForm.addEventListener('submit', async (event) => {
       from_email: email,
       message: message,
     });
-    alert('تم إرسال الرسالة بنجاح! شكرًا لك.');
+    alert('Message sent successfully! Thank you.');
     // يمكنك إعادة توجيه المستخدم إلى صفحة تأكيد أو تنظيف الحقول هنا
   } catch (error) {
-    console.error('حدث خطأ أثناء إرسال البريد الإلكتروني:', error);
-    alert('حدث خطأ أثناء إرسال الرسالة. يرجى المحاولة مرة أخرى.');
+    console.error('An error occurred while sending email:', error);
+    alert('An error occurred while sending the message. Please try again.');
   }
 });
